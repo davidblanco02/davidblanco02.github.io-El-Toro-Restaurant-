@@ -1,0 +1,15 @@
+{
+  "name": "eltororestaurant",
+  "version": "1.0.0",
+  "description": "Landing page for El Toro Restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Erwin David Blanco Balcza <erwin.david98@gmail.com>",
+  "license": "MIT"
+}
