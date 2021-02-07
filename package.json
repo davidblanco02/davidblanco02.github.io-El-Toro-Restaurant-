@@ -11,5 +11,8 @@
     "css"
   ],
   "author": "Erwin David Blanco Balcza <erwin.david98@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "node-modules": "^1.0.1"
+  }
 }
