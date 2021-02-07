@@ -18,18 +18,19 @@ body {
     justify-content: space-between;
     width: 100%;
     min-width: 320px;
-    height: 10vh;
-   /*  background-image: url('../img/salvadorfood.jpg');
+    height: 12vh;
+    background-color: var(--mustard);
+    /* background-image: url('../img/sla');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; */
 } 
 .header img {
-    width: 65px;
-    height: 65px;
+    width: 80px;
+    height: 12vh;
 }
 .header__menu {
-    margin: 10px 30px;
+    margin: 20px 40px;
 }
 .header__menu--icon {
     align-self: auto;
@@ -154,7 +155,7 @@ body {
   }
   
   .carousel__container {
-    width: 300%;
+    width: 700%;
     display: flex;
     transition: 450ms -webkit-transform;
     transition: 450ms transform;
@@ -169,8 +170,8 @@ body {
   }
   
   .carousel__container:hover .carousel-item:hover {
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
+    -webkit-transform: scale(1.20);
+    transform: scale(1.20);
     opacity: 1;
   }
   
@@ -276,6 +277,67 @@ body {
     margin-top: 20px;
     font-size: 2.0rem;
 }
+.contact__container {
+    width: 100%;
+    height: 80vh;
+}
+.contact__container-title { 
+    padding-top: 30px;
+    font-size: 3.0rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.contact__container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    font-size: 2.0rem;
+    align-self: center;
+    color: white;
+}
+.footer {
+    width: 100%;
+    position: -webkit-sticky;
+    position: fixed;
+    align-self: flex-end;
+    top: 0;
+    bottom: 0;
+}
+.footer-link {
+    width: 100%;
+    height: 5vh;
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: var(--mustard);
+}
+.footer-link a {
+    text-decoration: none;
+    color: white;
+}
+.footer-link a:hover {
+    color: var(--brown-chocolat);
+}
+.footer__media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-top: 10px;
+    background-color: var(--mustard);
+}
+.footer__media span a {
+    font-size: 1.4rem;
+    color: white;
+    text-decoration: none;
+}
+.footer__media span a img {
+    width: 30px;
+    height: 30px;
+}
+
 
 
   
