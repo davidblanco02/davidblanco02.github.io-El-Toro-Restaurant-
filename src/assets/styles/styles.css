@@ -139,7 +139,7 @@ body {
     color: white;
 }
 .carousel-title {
-    position: static;
+    position: sticky;
     color: white;
     font-size: 3.0rem;
     padding-top: 30px;
@@ -149,20 +149,25 @@ body {
   }
   
 .carousel {
-    overflow: scroll;
     width: 100%;
-    position: relative;
+    overflow:scroll;
+    overflow-y: hidden;
+  }
+  .carousel::-webkit-scrollbar {
+      display: none;
   }
   
   .carousel__container {
     width: 700%;
     display: flex;
+    position: relative;
     transition: 450ms -webkit-transform;
-    transition: 450ms transform;
-    transition: 450ms transform, 450ms -webkit-transform;
+    transition: 450ms -webkit-transform;
+    transition: 450ms -webkit-transform, 450ms -webkit-transform;
     font-size: 0;
     margin: 55px 0px;
     padding-bottom: 10px;
+
   }
   
   .carousel__container:hover .carousel-item {
@@ -186,13 +191,13 @@ body {
     cursor: pointer;
     transition: 450ms all;
     -webkit-transform-origin: center left;
-    transform-origin: center left;
+    -webkit-transform-origin: center left;
     overflow: hidden;
   }
   
   .carousel-item:hover ~ .carousel-item {
     -webkit-transform: translate3d(100px, 0, 0);
-    transform: translate3d(100px, 0, 0);
+    -webkit-transform: translate3d(100px, 0, 0);
   }
   
   .carousel-item__img {
@@ -206,7 +211,7 @@ body {
     width: 250px;
     height: 300px;
     display: inline;
-    background: linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
     bottom: 0;
     left: 0;
     opacity: 0;
@@ -313,6 +318,7 @@ body {
     background-color: var(--mustard);
 }
 .footer-link a {
+    padding-top: 10px;
     text-decoration: none;
     color: white;
 }
